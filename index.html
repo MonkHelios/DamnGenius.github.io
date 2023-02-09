@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script>
+	  document.onkeydown = function(e) {
+		if(event.keyCode == 123) {
+		return false;
+		}
+		if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+		return false;
+		}
+		if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+		return false;
+		}
+		if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+		return false;
+		}
+		}
+      function checkPassword() {
+        var password = prompt("The key is in the mirror");
+        if (password == "bolB") {
+          document.getElementById("message").innerHTML = "tomorrow enforce slot squirrel canyon soda grape stool sand meat globe cable urban shock flash anger cry drill wire fantasy gallery erode story test";
+        } else {
+          alert("Incorrect key! Devil is in the details. Look in the mirror.");
+        }
+      }
+    </script>
+  </head>
+  <body oncontextmenu="return false;">
+    <button onclick="checkPassword()">The Key?</button>
+    <div id="message" style="display: block;"></div>
+  </body>
+</html>
